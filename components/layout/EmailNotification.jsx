@@ -170,7 +170,7 @@ const EmailNotification = ({ setMounted }) => {
           />
           <span style={styles.badge}>Payment Security Notice</span>
           <h1 style={styles.title}>
-            SeamlessChex connected to your Citibank - Digital
+            SeamlessChex connected to your account - Digital
                         Banking account
           </h1>
           <p style={styles.subtitle}>
